@@ -243,6 +243,14 @@ body {
     list-style-type: none;
     width: 270px;
     position: relative;
+    margin-left: auto;
+    box-sizing: content-box;
+    padding: 19px 0 19px 240px;
+    min-height: 63px;
+}
+
+.how__does_item + .how__does_item{
+    margin-top: 40px;
 }
 
 .how__does_item::before{
@@ -259,4 +267,6 @@ body {
     border-radius: 50%;
     color:#fff;
     position: absolute;
+    left: 0;
+    top: 0;
 }
