@@ -241,6 +241,8 @@ body {
 
 .how__does_item{
     list-style-type: none;
+    width: 270px;
+    position: relative;
 }
 
 .how__does_item::before{
@@ -255,5 +257,6 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    color:#fff
+    color:#fff;
+    position: absolute;
 }
