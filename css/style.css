@@ -222,3 +222,38 @@ body {
 .how-does{
     padding-bottom: 150px;
 }
+
+.how-does__inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how__does-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how__does-list{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how__does_item{
+    list-style-type: none;
+}
+
+.how__does_item::before{
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #0066ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color:#fff
+}
